@@ -1,11 +1,12 @@
-import './App.css';
+import React from 'react';
+import {Posts} from "./post/Posts";
 
-function App() {
-  return (
-    <div >
-      App
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <Posts/>
+        </div>
+    );
+};
 
 export {App};
