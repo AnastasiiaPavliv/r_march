@@ -6,7 +6,9 @@ const App = () => {
   return (
     <div >
       <Simpson firstname={'Homer'} surname={"Simpson"} age={48} gender={"male"}
-               photo={'https://static.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png/revision/latest?cb=20221226145155'}/>
+               photo={'https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png'}/>
+        <Simpson firstname={'Marge'} surname={"Simpson"} age={40} gender={"female"}
+               photo={'https://upload.wikimedia.org/wikipedia/uk/0/0b/Marge_Simpson.png'}/>
     </div>
   );
 }

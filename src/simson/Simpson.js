@@ -5,8 +5,8 @@ const Simpson = (props) => {
     return (
         <div>
             <h3>{firstname} {surname}</h3>
-            <h3>{age}</h3>
-            <h3>{gender}</h3>
+            <p>{age}</p>
+            <p>{gender}</p>
             <img src={photo} alt={firstname}/>
         </div>
     );
