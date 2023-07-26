@@ -1,11 +1,16 @@
-import './App.css';
+import React, {useState} from 'react';
+import {UserPage} from "./component/Page/userPage";
+import {PostsPage} from "./component/Page/PostsPage";
 
-function App() {
-  return (
-    <div >
-      App
-    </div>
-  );
-}
+
+const App = () => {
+
+    return (
+        <div>
+            <PostsPage/>
+           {/*<UserPage/>*/}
+        </div>
+    );
+};
 
 export {App};
