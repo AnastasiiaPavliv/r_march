@@ -1,11 +1,12 @@
-import './App.css';
+import React from 'react';
+import {UsersPage} from "./Page/UsersPage";
 
-function App() {
-  return (
-    <div >
-      App
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <UsersPage/>
+        </div>
+    );
+};
 
 export {App};
