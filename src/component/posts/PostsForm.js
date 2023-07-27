@@ -9,7 +9,7 @@ const save=(post)=>{
         method:'POST',
             body:JSON.stringify(post)})
         .then(value => value.json())
-        .then((value => setPosts(prev=>[!prev, value])))
+        .then((value => setPosts(prev=>[...prev, value])))
     // reset()
     console.log(post)
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Post} from "./Post";
 
 const Posts = ({posts, setPosts}) => {
@@ -8,7 +8,7 @@ const Posts = ({posts, setPosts}) => {
         fetch(`https://jsonplaceholder.typicode.com/comments`)
             .then(value => value.json())
             .then(value => setPosts(value))
-    },[posts])
+    },[])
     return (
         <div>
             {posts.map(post=><Post key={post.id} post={post}/>)}
