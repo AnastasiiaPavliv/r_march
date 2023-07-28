@@ -1,14 +1,27 @@
 import React from 'react';
+import {useForm} from "react-hook-form";
+import {apiService} from "../servises/apiServise";
 
-const UsersForm = () => {
-    const {register,}=useForm
+const UsersForm = ({setUsers}) => {
+    const {register, handleSubmit}=useForm()
+ const save=(user)=>{
+         apiService.handleSave(user)
+
+  // fetch(`https://localhost:3000`,{
+  //    headers:{'Content-type':'application/json'},
+  //   method:'POST', body:JSON.stringify(user) })
+  //     .then(value => value.json())
+  //     .then((value => setUsers(prev=>[...prev, value])))
+
+        console.log(user)
+ }
 
     return (
         <div>
-            <form>
-                <lable  name={'name'} ><input placeholder={'name'} name={'name'}/></lable>
-                <lable  name={'username'} ><input placeholder={'username'} name={'username'}/></lable>
-                <lable  name={'email'} ><input placeholder={'email'} name={'email'}/></lable>
+            <form onSubmit={handleSubmit(save)}>
+                <lable name={'name'} >name<input placeholder={'name'} {...register('name')} /></lable>
+                <lable name={'username'}>username<input placeholder={'username'} {...register('username')}/></lable>
+                <lable name={'email'}>email<input placeholder={'email'} {...register('email')}/></lable>
                 <button>Save</button>
             </form>
         </div>
