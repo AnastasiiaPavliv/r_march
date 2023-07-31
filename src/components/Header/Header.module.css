@@ -1,0 +1,17 @@
+body{margin: 0}
+.Header{
+    height: 45px;
+    background: lightgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header a{
+    text-decoration: none;
+    font-family: "Berlin Sans FB", sans-serif;
+    color: green;
+    font-size: larger;
+}
+.Header a[class="active"]{
+    color: darkseagreen;
+}
