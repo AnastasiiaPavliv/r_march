@@ -1,0 +1,24 @@
+body{margin: 0}
+.block{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.Header{
+    background: hotpink;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header a{
+    text-decoration: none;
+    color: purple;
+    font-size: larger;
+    font-family: "Berlin Sans FB", sans-serif
+}
+
+.Header a[class='active']{
+    color: lightpink;
+}
