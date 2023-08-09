@@ -5,12 +5,12 @@ import {MovieInfoPage, MoviesListPage} from "../pages";
 const router=createBrowserRouter([{
     element:<MainLayout/>,
     children:[{
-        path:'',element:<h2>Hello</h2>
+        path:'',element:<h1>Hello</h1>
     }, {
-        path: 'page/:page', element: <MoviesListPage/>,
-        children: [{
-            path: 'page/:page/movie/:id', element: <MovieInfoPage/>
-        }]
-    }]
+        path: 'page/:page', element: <MoviesListPage/>},
+        {
+            path: 'movie/:id', element:  <MovieInfoPage/>
+        }
+    ]
 }])
 export {router}

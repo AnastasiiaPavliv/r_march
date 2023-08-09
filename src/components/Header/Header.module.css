@@ -1,16 +1,13 @@
-body{margin: 0}
-.block{
-    overflow: hidden;
+/*body{margin: 0}*/
+.Header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-}
-.Header{
-    background: hotpink;
-    height: 45px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: mediumpurple;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 .Header a{
     text-decoration: none;
@@ -19,6 +16,6 @@ body{margin: 0}
     font-family: "Berlin Sans FB", sans-serif
 }
 
-.Header a[class='active']{
-    color: lightpink;
-}
+/*.Header a[class='active']{*/
+/*    color: lightpink;*/
+/*}*/

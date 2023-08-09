@@ -10,9 +10,8 @@ const Movie = ({movie, pageId}) => {
     return (
         <div>
             <div className={css.Movie} onClick={()=>{
-                movieNavigate(`movie/${id}`);
-            // localStorage.setItem('pageId', JSON.stringify(pageId))
-            }}>
+                movieNavigate(`/movie/${id}`);}}>
+
                     <img src={`https://image.tmdb.org/t/p/w500${poster_path}`}/>
             </div>
         </div>

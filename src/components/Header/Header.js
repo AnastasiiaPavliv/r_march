@@ -5,9 +5,9 @@ import css from './Header.module.css'
 
 const Header = () => {
     return (
-        <div className={css.block}>
+        <div >
         <div className={css.Header}>
-          <NavLink to={AppRouter.MAIN}>MAIN</NavLink>
+          {/*<NavLink to={AppRouter.MAIN}>MAIN</NavLink>*/}
           <NavLink to={AppRouter.MOVIES}>MOVIES</NavLink>
         </div>
         </div>

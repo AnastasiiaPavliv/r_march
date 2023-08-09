@@ -1,0 +1,9 @@
+body{margin:0}
+.genres{
+    width: 100px;
+    height: 100%;
+    background-color: #BDABFB;
+    margin-top: 40px;
+    position: fixed;
+    padding: 5px;
+}

@@ -4,5 +4,35 @@
     height: 500px;
     align-content: space-between;
     justify-content: center;
-    padding-top: 55px;
+    padding-top: 75px;
+}
+.pag{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+button{
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Consolas,sans-serif;
+    color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+    border-radius: 10%;
+    background-color:mediumslateblue ;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+    color: #282c34;
+    border: 3px solid #282c34 ;
+}
+.text{
+    margin: 10px;
+    font-family: Consolas,sans-serif;
+    color: rebeccapurple;
+    font-size: 18px;
+    padding: 5px;
 }

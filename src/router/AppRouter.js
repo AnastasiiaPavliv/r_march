@@ -1,6 +1,6 @@
 
 const AppRouter={
-    MOVIES:'page/:page',
+    MOVIES:'page/1',
     MAIN:''
 }
 export {AppRouter}
